@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>halifix</name>
+    <description/>
+    <Style id="icon-1502-FFD600-nodesc-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1502-FFD600-nodesc-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1502-FFD600-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1502-FFD600-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1502-FFD600-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-558B2F-nodesc-normal">
+      <IconStyle>
+        <color>ff2f8b55</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-558B2F-nodesc-highlight">
+      <IconStyle>
+        <color>ff2f8b55</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-558B2F-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-558B2F-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-558B2F-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-673AB7-nodesc-normal">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-673AB7-nodesc-highlight">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-673AB7-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-673AB7-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-673AB7-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-A52714-nodesc-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-A52714-nodesc-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-A52714-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-A52714-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-A52714-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Youth Services</name>
+      <Placemark>
+        <name>Hope Blooms</name>
+        <styleUrl>#icon-1899-558B2F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5845265,44.6521467,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Community YMCA
+</name>
+        <styleUrl>#icon-1899-558B2F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5854181,44.6539725,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>A Tiny Lab for Early Learning</name>
+        <styleUrl>#icon-1899-558B2F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5840812,44.6530199,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>LOVE Nova Scotia</name>
+        <styleUrl>#icon-1899-558B2F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5843025,44.6529073,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Saint George's YouthNet]]></name>
+        <styleUrl>#icon-1899-558B2F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5827946,44.6533791,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cornwallis Street Baptist Church</name>
+        <styleUrl>#icon-1899-558B2F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5836929,44.6527059,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Delmore Buddy Daye Learning Institute</name>
+        <styleUrl>#icon-1899-558B2F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.58334,44.652623,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Mi'Kmaq Child Development Centre]]></name>
+        <styleUrl>#icon-1899-558B2F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5842217,44.6527036,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Youth Project</name>
+        <styleUrl>#icon-1899-558B2F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5836851,44.6544911,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>North End Parent Resource Centre</name>
+        <styleUrl>#icon-1899-558B2F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.587722,44.655323,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Harvest Community Church</name>
+        <styleUrl>#icon-1899-558B2F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5895011,44.6560367,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Cunard Street Children's Centre]]></name>
+        <styleUrl>#icon-1899-558B2F-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5865602,44.6528063,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Social Supports</name>
+      <Placemark>
+        <name>Halifax Housing Help</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5868643,44.6562934,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Adsum House</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5860844,44.6562365,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hope Cottage</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5864574,44.6563717,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Harbour City Homes - Halifax Non-Profit Housing</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.585837,44.6568324,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Halfway Houses</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5885599,44.6578425,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dalhousie Legal Aid Service</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.585167,44.6534113,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Mi'kmaw Native Friendship Centre]]></name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5843436,44.6524756,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mainline Needle Exchange
+</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5842763,44.6522684,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Direction 180
+</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5839175,44.6525126,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>North End Community Health Centre</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5834639,44.652306,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nova Scotia Community Svc</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5835747,44.6522688,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Souls Harbour RESCUE Mission</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5864598,44.6524161,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shelter Nova Scotia</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.585289,44.6530966,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Halifax North Memorial Public Library</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5856435,44.6542341,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Parker Street Food and Furniture Bank</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5889999,44.6541238,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YMCA Nova Scotia Works Centre</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5855842,44.6539027,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Halifax Backpackers Hostel</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5848446,44.6531401,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Radstorm</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5844929,44.6528956,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nova Scotia Income Assistance</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5836168,44.6519661,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Salvation Army The Men’s Shelter</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5821952,44.651048,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Salvation Army Food Bank</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5822779,44.6509545,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dress For Success Halifax Society</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5817177,44.6507627,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Family SOS</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5816588,44.6506487,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brunswick Street Mission</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5811515,44.6527616,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Metro Turning Point Centre</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5809638,44.6533538,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>The Vimy Arms</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5819867,44.6507745,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ahern Manor</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5863463,44.6544194,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>5786 North St</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.593734,44.6552245,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Uniacke Street</name>
+        <styleUrl>#icon-1899-673AB7-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5872248,44.655642,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Needle Hotspots</name>
+      <Placemark>
+        <name>Salvation Army/Vimy Arms
+</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5819539,44.6509853,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Salvation Army/Vimy Arms
+</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5823706,44.6507448,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>North Portland 
+</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.581894,44.6515379,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>South Portland
+</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.581143,44.6519215,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Behind MOSH
+</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5833184,44.6524576,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Underground Parking
+</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5828168,44.6523546,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[St. Patrick's Catholic Church, Halifax]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5831002,44.654095,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[St Patrick's School 
+]]></name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5843124,44.6539939,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>NE Library
+</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5856814,44.6541333,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>YMCA Steps
+</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5853085,44.6540074,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brunswick Street Mission
+</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5811387,44.6529068,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brunswick Street Mission
+</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5807002,44.6529507,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>MTP</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5809467,44.6532594,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>2087 Gottingen St</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5827006,44.65167,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Old Lori/Bobs alley</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5843872,44.6531141,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Victoria Hall</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.589297,44.6556556,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>2388 Gottingen St</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5881305,44.6551063,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Condos on Brunswick
+</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5807999,44.6524759,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cogswell Radio Station
+</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5819359,44.6505059,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Behind Staples/Marquee</name>
+        <styleUrl>#icon-1899-A52714-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5810856,44.6512997,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>HaliFIX</name>
+      <Placemark>
+        <name>HaliFIX</name>
+        <styleUrl>#icon-1502-FFD600-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -63.5838453,44.6525591,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

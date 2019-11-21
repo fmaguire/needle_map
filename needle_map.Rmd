@@ -1,0 +1,53 @@
+---
+title: "Needle Search Map"
+author: "Finlay Maguire"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo= TRUE)
+library(ggmap)
+library(tibble)
+library(dplyr)
+register_google(key = "")
+```
+
+```{r get_map_and_locations}
+ne_map <- get_googlemap(center=c(lon=-63.583902, lat=44.652524), maptype='roadmap', zoom=17, scale=4, style="element:labels%7Cvisibility:off&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.neighborhood%7Cvisibility:off&style=feature:road.arterial%7Cvisibility:on&style=feature:road.highway%7Cvisibility:on&style=feature:road.local%7Cvisibility:on")
+ne_map <- ggmap(ne_map)
+
+setwd('~/Documents/research/social/halifix')
+location_df <- tidykml::kml_points('halifix.kml') %>% select(c('folder', 'name', 'longitude', 'latitude')) %>% rename('Type' = folder, 'Name' = name)
+location_df <- tidyr::unite(location_df, 'loc', latitude, longitude, sep=', ', remove=F)
+location_df$distance <- mapdist(from = as.character( filter(location_df, Type == 'HaliFIX') %>% select('loc')), to = as.character(location_df$loc), mode='walking')[,c('m')] 
+location_df <- rename(location_df, "Walking Distance (m)" = "distance$m")
+```
+
+
+```{r map_plot}
+
+all_points <- ne_map + geom_point(data=location_df, aes(x=longitude, y=latitude, color=Type), size=3) + ggrepel::geom_label_repel(data = location_df, aes(x=longitude, y=latitude, label=Name, color=Type), size=2.2, angle=-43) + ggtitle('North-End Services') + ylab('Latitude') + xlab('Longitude')
+ggsave('ne_all_services.pdf', all_points)
+
+no_needle_df <- filter(location_df, Type != 'Needle Hotspots')
+no_needle <- ne_map + geom_point(data = no_needle_df, aes(x=longitude, y=latitude, color=Type), size=3) + ggrepel::geom_label_repel(data = no_needle_df, aes(x=longitude, y=latitude, label=Name, color=Type), size=2.2, angle=-43) + ggtitle('North-End Services') + ylab('Latitude') + xlab('Longitude')
+ggsave('ne_adult_youth_services.pdf', no_needle)
+
+```
+
+```{r boxplot}
+
+nearby_df <- filter(location_df, distance$m < 200, Type != 'HaliFIX')
+boxplot <- ggplot(data=nearby_df, aes(x=Type, color=Type, y=distance$m)) + geom_boxplot() + ylab('Walking Distance from HaliFIX (m)') + xlab('') + ggtitle('Distances to Services near HaliFIX (<200m)') + geom_point() + theme(legend.position = "none")
+ggsave('service_distances_to_halifix.pdf', boxplot)
+
+child_services <- filter(nearby_df, Type == 'Youth Services')$distance$m
+social_supports <- filter(nearby_df, Type == 'Social Supports')$distance$m
+ks_diffs <- ks.test(child_services, social_supports)
+
+ks_label <- paste("Two-sample Kolmogorov-Smirnov test", "D = 0.21429, p-value = 0.9915", "=> Can't reject null that distances are same", sep='\n')
+
+boxplot_annotated <- ggplot(filter(location_df, distance$m < 200, Type != 'HaliFIX'), aes(x=Type, color=Type, y=distance$m)) + geom_boxplot() + ylab('Walking Distance from HaliFIX (m)') + xlab('') + ggtitle('Distances to Services near HaliFIX (<200m)') + geom_point() + theme(legend.position = "none") + geom_segment(x=2.5, y=145, xend=2, yend=145) + geom_segment(x=2.5, y=145, xend=3, yend=145) + annotate('label', x=2.5, y=145, label=ks_label)
+ggsave('annotated_service_distances_to_halifix.pdf', boxplot_annotated)
+
+```
